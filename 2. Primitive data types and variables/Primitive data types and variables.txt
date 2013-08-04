@@ -1,0 +1,241 @@
+1.Declaring variables:
+using System;
+
+    class DeclaringVariables
+    {
+        static void Main()
+        {
+            int a = 52130;
+            sbyte b = -115;
+            int c = 4825932;
+            byte d = 97;
+            short e = -10000;
+            ushort f = 20000;
+            byte g = 224;
+            uint h = 970700000;
+            byte i = 112;
+            sbyte j = -44;
+            int k = -1000000;
+            short l = 1990;
+            long m = 123456789123456789;
+            Console.WriteLine("The value of a is {0}. The value of j is {1} and this of m is {2}.", a,j,m);
+
+
+        }
+    }
+	
+2.Assigning float and double
+using System;
+    class AssigningFloatAndDouble
+    {
+        static void Main()
+        {
+            double A = 34.567839023;
+            float B = 12.345F;
+            double C = 8923.1234857;
+            decimal D = 3456.091124875956542151256683467M;
+            Console.WriteLine("The values {0} and {1} can be assigned to a variable of type double.\nThe value {2} can be assigned to a variable of type float and the last value - {3} can be assigned to a variable of type decimal", A, C, B, D);
+        }
+    }
+	
+	
+3.Comparing floating-point numbers
+using System;
+    class ComparingFloating_pointNumbers
+    {
+        static void Main()
+        {
+            Console.WriteLine("Enter the first number: ");
+            decimal firstNumber = decimal.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the second number: ");
+            decimal secondNumber = decimal.Parse(Console.ReadLine());
+            bool comparing = (Math.Abs(firstNumber-secondNumber) < 0.000001m);
+            Console.WriteLine(comparing);
+        }
+    }
+
+	
+4.Integer variable 254
+using System;
+    class IntegerVariable254
+    {
+        static void Main()
+        {
+            int a;
+            a = 0x000FE;
+            Console.WriteLine(a);
+        }
+    }
+	
+5.Character variable
+using System;
+    class CharacterVariable
+    {
+        static void Main()
+        {
+            char symbol = 'H';
+            Console.WriteLine("The Unicode code of 'H' is {0}", (int)symbol);
+        }
+    }
+	
+	
+6.Boolean variable gender
+using System;
+    class BooleanVariableGender
+    {
+        static void Main()
+        {
+            bool isFemale = true;
+            Console.WriteLine(isFemale);
+        }
+    }
+	
+	
+7.String and object variables
+using System;
+    class StringAndObjectVariables
+    {
+        static void Main()
+        {
+            string first = "Hello";
+            string second = "World";
+            object together = first + " " + second;
+            string third = (string)together;
+            Console.WriteLine(third);
+        }
+    }
+	
+	
+8.Escaping
+using System;
+    class Escaping
+    {
+        static void Main()
+        {
+            string a = "The \"use\" of quotations causes difficulties.";
+            string b = @"The ""use"" of quotations causes difficulties.";
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+
+        }
+    }
+	
+	
+9.Copyright symbol
+using System;
+    class CopyrightSymbol
+    {
+        static void Main()
+        {
+            char copyRight = '©';
+            Console.WriteLine("    " + copyRight + "     ");
+            Console.WriteLine("   " + copyRight + " " + copyRight);
+            Console.WriteLine("  " + copyRight + "   " + copyRight);
+            Console.WriteLine(" " + copyRight + " " + copyRight + " " + copyRight + " " + copyRight);
+
+        }
+    }
+
+	
+10.Employees' information
+using System;
+    class EmployeesInformation
+    {
+        static void Main(string[] args)
+        {
+            string firstName = "Gabriela";
+            string familyName = "Angelova";
+            int age = 19;
+            char gender = 'f';
+            long iDNumber = 2123245384937;
+            int uniqueCode = 27569999;
+
+        }
+    }
+
+	
+11.Exchanging values
+using System;
+    class ExchangingValues
+    {
+        static void Main()
+        {
+            int a = 5;
+            int b = 10;
+            Console.WriteLine("a = {0} and b = {1}", a, b);
+            int c = a;
+            a = b;
+            b = c;
+            Console.WriteLine("Now a is = {0} and b = {1}", a, b);
+            //Another way:
+            //int a = 5;
+            //int b = 10;
+            //a = a + b;
+            //b = a - b;
+            //a = a - b;
+            //Console.WriteLine(a);
+            //Console.WriteLine(b);
+
+        }
+    }
+	
+	
+12.using System;
+    class ASCIITable
+    {
+        static void Main()
+        {
+            for(int a= 1; a<=255; a ++)
+            {
+                char ascii = (char)a;
+                Console.WriteLine(ascii);
+            }
+        }
+    }
+
+	
+	
+13.Null values
+using System;
+    class NullValues
+    {
+        static void Main()
+        {
+            int? b = null;
+            int? c = 17;
+            double? d = null;
+            double? e = 3.14;
+            Console.WriteLine(b);                          //null
+            Console.WriteLine(b.GetValueOrDefault());      //0
+            Console.WriteLine(c);                          //17  
+            Console.WriteLine(d);                          //null
+            Console.WriteLine(d.GetValueOrDefault());      //0
+            Console.WriteLine(e.HasValue);                 //True
+            Console.WriteLine(e.GetValueOrDefault());      //3.14
+        }
+    }
+
+	
+	
+14.Bank account
+using System;
+    class BankAccount
+    {
+        static void Main()
+        {
+            string firstName = "Gabriela";
+            string middleName = "Georgieva";
+            string lastName = "Angelova";
+            string name;
+            name = firstName + " " + middleName + " " + lastName;
+            decimal balance = 326.67M;
+            string bankName = "First Investment Bank";
+            string IBAN = "BG80 BNBG 9661 1020 3456 78";
+            string BIC = "FINVBGSF";
+            ulong creditCard1 = 378282246310005;
+            ulong creditCard2 = 5610591081018250;
+            ulong creditCard3 = 76009244561;
+            Console.WriteLine("This is the bank account of {0}, whose money balance is {1}$. This account is in {2} bank. The user has IBAN number: {3}, BIC: {4} and tree credit cards with the following numbers: {5}, {6} and {7}.", name, balance, bankName, IBAN, BIC, creditCard1, creditCard2, creditCard3);
+
+        }
+    }

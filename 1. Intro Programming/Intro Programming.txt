@@ -1,0 +1,129 @@
+1.Print hello
+using System;
+    class PrintHello
+    {
+        static void Main()
+        {
+            Console.WriteLine("Hollo, C#!");
+        }
+    }
+	
+	
+2.Print name
+using System;
+    class PrintName
+    {
+        static void Main()
+        {
+            Console.WriteLine("Gabriela");
+        }
+    }
+
+	
+3.Print numbers
+using System;
+    class PrintNumbers
+    {
+        static void Main()
+        {
+            Console.WriteLine(1);
+            Console.WriteLine(101);
+            Console.WriteLine(1001);
+        }
+    }
+	
+	
+4.Print first and last name
+using System;
+    class PrintFirstAndLastName
+    {
+        static void Main()
+        {
+            string a = "Gabriela";
+            string b = "Angelova";
+            Console.WriteLine(a + " " + b);
+        }
+    }
+	
+	
+5.Current DateTime
+using System;
+class CurrentDateTime
+    {
+        static void Main()
+        {
+            DateTime now = DateTime.Now;
+            Console.WriteLine(now);
+
+        }
+    }
+	
+	
+6.Calculate square root
+using System;
+    class CalculateSquarNumber
+    {
+        static void Main()
+        {
+            int Number = 12345;
+            int SquarNumber = Number * Number;
+            Console.WriteLine(SquarNumber);
+        }
+    }
+
+	
+7.Print first 10 members of the sequence:
+using System;
+    class PrintFirst10MembersSequence
+    {
+        static void Main()
+        {
+            Console.WriteLine(2);
+            Console.WriteLine(-3);
+            Console.WriteLine(4);
+            Console.WriteLine(-5);
+            Console.WriteLine(6);
+            Console.WriteLine(-7);
+            Console.WriteLine(8);
+            Console.WriteLine(-9);
+            Console.WriteLine(10);
+            Console.WriteLine(-11);
+
+            //or:
+
+            Console.WriteLine("Second version: ");
+
+            int k = 2;
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine(k);
+                k = k * (-1);
+                if (k < 0)
+                {
+                    k--;
+                }
+                else
+                {
+                    k++;
+                }
+            }
+
+        }
+    }
+
+	
+	
+8.Age in 10 years:
+using System;
+    class AgeIn10Years
+    {
+        static void Main()
+        {
+            Console.WriteLine("How old are you ? ");
+            string ageString = Console.ReadLine();
+            int ageNum = int.Parse(ageString);
+            Console.WriteLine("Now you are" + "  " + ageNum + "  " + "years old !");
+            int ageNum10 = ageNum + 10;
+            Console.WriteLine("In 10 years you will be" + "  " + ageNum10 + "  " + " years old !");
+        }
+    }
